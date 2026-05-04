@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details form</title>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label><br>
+            <input id="name" type="text" placeholder="Name"><br><br>
+            <label for="email">Email</label><br>
+            <input id="email" type="text" placeholder="email"><br><br>
+            <label for="mobile">Mobile</label><br>
+            <input id="mobile" type="text" placeholder="mobile"><br><br>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="addressline1">Address Line  1</label><br>
+            <textarea name="" id="addressline1" rows="3"></textarea><br><br>
+            
+            <label for="city">City</label><br>
+            <select id="city">
+                <option value="pune">Pune</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="bihar">bihar</option>
+                <option value="bhopal">Bhopal</option>
+            </select><br><br>
+
+            <label for="country">Country</label><br>
+            <select id="country">
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="africa">Africa</option>
+            </select>
+        </fieldset>
+
+        <br><br>
+        <label for="courses">Select Courses</label> <br>
+        <select id="courses">
+            <optgroup label="frontend">
+                <option value="html">Html</option>
+                <option value="css">Css</option>
+                <option value="js">JS</option>
+            </optgroup>
+            <optgroup label="backend">
+                <option value="nodejs">Nodejs</option>
+                <option value="express">Express</option>
+                <option value="mongodb">Mongodb</option>
+            </optgroup>
+        </select>
+
+        <button>Submit Form</button>
+    </form>
+</body>
+</html>
