@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.first{
+    color: white;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    font-size: 50px;
+}
+
+.second{
+    height: 200px;
+    font-size: 50px;
+    color: white;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+.third{
+    height: 200px;
+    font-size: 50px;
+    color: white;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
