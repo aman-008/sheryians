@@ -1,0 +1,101 @@
+/* @font-face {
+    font-family: hihi;
+    src: url(./Storm\ Gust.ttf);
+}
+
+@font-face {
+    font-family: sheryians;
+    src: url(Manrope-VariableFont_wght.woff2);
+}
+
+//*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+h1{
+    color : red;
+    background-color: lightblue;
+}
+    
+h2{
+    color: yellow;
+    background-color: lightseagreen;
+}
+    
+        
+        
+        
+h1{
+    color : black;
+    background-color: red;
+    font-size: 50px;
+    font-family: sheryians;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+}
+*/
+
+/* SECTION-2 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.one{
+    height: 200px;
+    width: 200px;
+    /* background: linear-gradient(to left bottom, red, blue, yellow); */
+
+    /* background: radial-gradient(lightblue, royalblue); */
+    /* background:conic-gradient(lightblue, royalblue); */
+
+    background-image: url(https://images.unsplash.com/photo-1776811789960-0de476026ce1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8);
+     /* background-size: cover;  */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+} 
+
+@font-face {
+    font-family: lucy;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    background-image: url(https://images.unsplash.com/photo-1776549821153-070eaa245bc1?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: #78d4eb;
+    text-align: center;
+    font-family: lucy;
+    font-size: 150px;
+    font-weight: 900;
+}
