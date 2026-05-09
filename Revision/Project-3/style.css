@@ -12,7 +12,6 @@ html, body{
 }
 
 main{
-    height: 100%;
     width: 100%;
     background-color: black;
     color: white;
@@ -76,7 +75,7 @@ a:hover{
 }
 
 .con{
-    font-size: 160px;
+    font-size: 8vw;
 }
 
 
@@ -109,15 +108,17 @@ a:hover{
 
 .cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 60px;
     align-items: center;
-    height: 450px;
+    flex-wrap: wrap;
     border-radius: 15px;
 }
 
 .cd{
     height: 420px;
-    width: 390px;
+    width: 100%;
+    max-width: 350px;
     padding: 10px;
     background-color: #0f0d0d;
 }
