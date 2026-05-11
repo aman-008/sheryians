@@ -26,7 +26,7 @@ main{
     overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+
 
 nav{
     height: 90px;
@@ -95,7 +95,7 @@ nav{
     width: 18px;
 }
 
-/* ===== HERO SECTION ===== */
+
 
 .hero-sec{
     width: 100%;
@@ -159,7 +159,7 @@ nav{
     margin-bottom: 35px;
 }
 
-/* ===== BUTTONS ===== */
+
 
 .btns{
     display: flex;
@@ -231,7 +231,7 @@ nav{
     color: white;
 }
 
-/* ===== RIGHT ===== */
+
 
 .right{
     width: 50%;
@@ -311,7 +311,7 @@ nav{
     right: 12%;
 }
 
-/* ===== HERO IMAGE ===== */
+
 
 .main-hero{
     position: absolute;
@@ -324,7 +324,6 @@ nav{
     transform: translate(-50%, -50%);
 }
 
-/* ===== STATS SECTION ===== */
 
 .stats-sec{
     width: 95%;
@@ -385,7 +384,6 @@ nav{
     width: 120px;
 }
 
-/* ===== PROJECT SECTION ===== */
 
 .projects-sec{
     width: 95%;
@@ -480,7 +478,6 @@ nav{
     line-height: 1.6;
 }
 
-/* ===== WORK SECTION ===== */
 
 .work-sec{
     width: 95%;
@@ -563,7 +560,6 @@ nav{
     line-height: 1.6;
 }
 
-/* ===== FOOTER ===== */
 
 footer{
     width: 95%;
@@ -644,7 +640,6 @@ footer{
     width: 22px;
 }
 
-/* ===== FOOTER CENTER ===== */
 
 .footer-center{
     display: flex;
@@ -688,7 +683,6 @@ footer{
     width: 18px;
 }
 
-/* ===== FOOTER RIGHT ===== */
 
 .footer-right{
     display: flex;
