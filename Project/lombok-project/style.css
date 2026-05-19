@@ -1,0 +1,287 @@
+/* CSS Boilerplate */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    padding: 20px;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("photo-1518173946687-a4c8892bbd9f.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px;
+}
+
+.container .left{
+    margin: 10px;
+}
+.container .left h2{
+    font-size: 25px;
+}
+
+.container .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    gap: 40px;
+
+}
+
+.container .right a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .right a:hover{
+    text-decoration: underline;
+}
+
+.container .right button{
+    padding: 12px;
+    font-size: 12px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+.first-sec{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+section .main-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+section .main-sec h1{
+    font-size: 90px;
+    color: white;
+}
+
+section .main-sec p{
+    color: white;
+    font-size: 30px;
+}
+
+.line{
+    width: 50px;
+    height: 2px;
+    border: 3px solid white;
+
+}
+
+
+.sec-sec{
+    height: 700px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #F6F7F6;
+}
+
+.sec-sec .sec-div{
+    height: 500px;
+    width: 350px;
+    border: 1px solid black;
+    box-shadow: 25px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.head h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.head .line{
+    width: 50px;
+    height: 2px;
+    border: 2px solid black;
+}
+
+.sec-sec .sec-div{
+    overflow: hidden;
+}
+
+.sec-sec .sec-div img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec-sec .sec-con .line{
+    border: 2px solid black;
+}
+.sec-sec .sec-con{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec-sec .sec-con p{
+    font-weight: 600;
+}
+
+.third-con{
+    height: 98vh;
+    display: flex;
+    width: 100%;
+    padding: 30px;
+
+    margin-bottom: 20px;
+}
+
+.third-con .third-left{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.third-con .third-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.third-con .third-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.third-con .third-right .th-r-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-con .third-right h2{
+    margin-top: 40px;
+    font-size: 55px;
+
+}
+
+.third-con .third-right .th-r-con .line{
+    width: 100px;
+    border: 2px solid black;
+}
+
+.third-con .third-right .third-right-bottom{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.for-sec{
+    background-color: #F6F7F6;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.for-sec h2{
+    font-size: 45px;
+}
+
+.for-sec h4{
+    font-size: 20px;
+}
+
+.for-sec input{
+    padding: 10px;
+    font-size: 17px;
+    color: #9DA3AF;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.for-sec button{
+    font-size: 15px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 1px solid black;
+}
+
+.foot{
+    height: 40vh;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.foot-left{
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.foot-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
