@@ -72,6 +72,13 @@ header{
     color: white;
     border: 1px solid white;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .right button:hover{
+    background-color: rgb(116, 192, 169);
+    color: white;
 }
 
 .first-sec{
@@ -257,6 +264,13 @@ section .main-sec p{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.for-sec button:hover{
+    background-color: #9aa5c9;
+    color: white;
 }
 
 .foot{
