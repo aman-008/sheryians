@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomm Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+    <nav>
+        <h1>Ecomm</h1>
+        <button class="create-btn">Create Product</button>
+    </nav>
 
-    <h1>Task Manager</h1>
+    <div class="products"></div>
 
-    <div class="input-box">
-      <input type="text" id="taskInput" placeholder="Enter task">
-      <button id="addBtn">Add Task</button>
+    <div class="popup">
+        <div class="popup-content">
+
+            <span class="close">✖</span>
+
+            <h1>Create Product</h1>
+
+            <input type="text" id="title" placeholder="Product Name">
+
+            <input type="text" id="desc" placeholder="Description">
+
+            <input type="number" id="price" placeholder="Price">
+
+            <input type="text" id="image" placeholder="Image URL">
+
+            <button id="submitBtn">Create</button>
+
+        </div>
     </div>
 
-    <div class="filters">
-      <button data-filter="all">All</button>
-      <button data-filter="completed">Completed</button>
-      <button data-filter="pending">Pending</button>
-    </div>
-
-    <ul id="taskList"></ul>
-
-
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

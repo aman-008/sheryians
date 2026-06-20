@@ -1,0 +1,269 @@
+/* CSS Boilerplate */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: neue;
+    src: url(NeueMachina-Regular.otf);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav{
+    height: 100px;
+    background-color: #020202;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+
+.nav .nav-left img{
+    height: 40px;
+    width: 196px;
+    align-items: center;
+
+}
+
+.nav-link{
+    display: flex;
+    Width: 670px;
+    height: 70px;
+    padding: 17px 32px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    gap: 37px;
+    flex-wrap: nowrap;
+    letter-spacing: 0.025em;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link .link{
+    position: relative;
+    width: fit-content;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+.nav-link .link a{
+    display: block;
+    text-decoration: none;
+    color: #6f6f72;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+.top{
+    transform: translateY(0);
+}
+
+.bottom{
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.nav-link .link:hover .top{
+    transform: translateY(-100%);
+}
+.nav-link .link:hover .bottom{
+    color: #E8602D;
+    transform: translateY(-100%);
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .circle{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(23, 20, 20);
+    border-radius: 50%;
+    /* overflow: hidden; */
+    cursor: pointer;
+
+}
+
+.circle .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.circle #course{
+    color: white;
+    background: transparent;
+    border: none;
+    margin: -20px;
+    overflow: hidden;
+}
+
+section{
+    height: calc(100% - 100px);
+    background-image: url(sheryians-bg.png);
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.para{
+    font-size: 21px;
+    color: #E8602D;
+    margin-bottom: 25px;
+}
+
+.head .main-head{
+    font-size: 68px;
+    font-family: neue;
+    font-weight:500;
+    margin-bottom: 25px;
+}
+.para1{
+    display: flex;
+    align-items: center;
+}
+
+.head .main-head span{
+    border: 1px solid #E8602D;
+}
+
+.para1 .info{
+    font-size: 30px;
+    color: #D7D7D7;
+}
+
+.info span{
+    padding: 6px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.img-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+.img-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-gal{
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 60%;
+    margin: -18px;
+}
+
+.img-gal img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-cont p span{
+    color: #E8602D;
+}
+.img-cont p{
+    font-weight: 400;
+    font-size: 22px;
+    color: #B8B5B4;
+}
+
+
+.btn{
+    position: relative;
+    width: fit-content;
+    height: 55px;
+    overflow: hidden;
+}
+
+
+
+.btn button{
+    background-color: #E75F2E;
+    color: white;
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.btn button:hover{
+    animation: role 0.8s ease;;
+}
+
+.btn .link{
+    position: relative;
+    width: fit-content;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+.btn .link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+
+.top{
+    transform: translateY(0);
+}
+
+.bottom{
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.btn .link:hover .top{
+    transform: translateY(-100%);
+}
+.btn .link:hover .bottom{
+    color: white;
+    transform: translateY(-100%);
+}

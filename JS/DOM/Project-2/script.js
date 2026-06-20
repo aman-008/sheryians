@@ -1,82 +1,109 @@
-const taskInput = document.querySelector("#taskInput");
-const addBtn = document.querySelector("#addBtn");
-const taskList = document.querySelector("#taskList");
-const filterBtns = document.querySelectorAll("[data-filter]");
+const popup = document.querySelector(".popup");
+const createBtn = document.querySelector(".create-btn");
+const closeBtn = document.querySelector(".close");
+const submitBtn = document.querySelector("#submitBtn");
+const products = document.querySelector(".products");
 
-addBtn.addEventListener("click", addTask);
+const titleInput = document.querySelector("#title");
+const descInput = document.querySelector("#desc");
+const priceInput = document.querySelector("#price");
+const imageInput = document.querySelector("#image");
 
-function addTask() {
-  const value = taskInput.value.trim();
+let editCard = null;
 
-  if (!value) return;
+createBtn.addEventListener("click", () => {
+    popup.style.display = "flex";
+    submitBtn.textContent = "Create";
+    editCard = null;
 
-  const li = document.createElement("li");
-
-  li.className = "task";
-  li.innerHTML = `
-      <span>${value}</span>
-
-      <div class="actions">
-        <button class="complete">✓</button>
-        <button class="edit">Edit</button>
-        <button class="delete">Delete</button>
-      </div>
-  `;
-
-  taskList.appendChild(li);
-
-  taskInput.value = "";
-}
-
-taskList.addEventListener("click", (e) => {
-
-  const task = e.target.closest(".task");
-
-  if (e.target.classList.contains("delete")) {
-    task.remove();
-  }
-
-  if (e.target.classList.contains("complete")) {
-    task.querySelector("span").classList.toggle("completed");
-  }
-
-  if (e.target.classList.contains("edit")) {
-
-    const span = task.querySelector("span");
-
-    const updated = prompt("Edit Task", span.textContent);
-
-    if (updated) {
-      span.textContent = updated;
-    }
-  }
+    titleInput.value = "";
+    descInput.value = "";
+    priceInput.value = "";
+    imageInput.value = "";
 });
 
-filterBtns.forEach(btn => {
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
 
-  btn.addEventListener("click", () => {
+submitBtn.addEventListener("click", () => {
 
-    const filter = btn.dataset.filter;
+    const title = titleInput.value.trim();
+    const desc = descInput.value.trim();
+    const price = priceInput.value.trim();
+    const image = imageInput.value.trim();
 
-    document.querySelectorAll(".task").forEach(task => {
+    if(!title || !desc || !price || !image){
+        alert("Fill all fields");
+        return;
+    }
 
-      const completed =
-      task.querySelector("span").classList.contains("completed");
+    if(editCard){
 
-      if(filter === "all"){
-        task.style.display = "flex";
-      }
+        editCard.querySelector("img").src = image;
+        editCard.querySelector("h2").textContent = title;
+        editCard.querySelector(".desc").textContent = desc;
+        editCard.querySelector(".price").textContent = "₹" + price;
 
-      else if(filter === "completed"){
-        task.style.display = completed ? "flex" : "none";
-      }
+        popup.style.display = "none";
+        return;
+    }
 
-      else if(filter === "pending"){
-        task.style.display = completed ? "none" : "flex";
-      }
+    const card = document.createElement("div");
 
-    });
+    card.classList.add("card");
 
-  });
+    card.innerHTML = `
+        <img src="${image}" alt="">
 
+        <div class="card-content">
+
+            <h2>${title}</h2>
+
+            <p class="desc">${desc}</p>
+
+            <p class="price">₹${price}</p>
+
+            <div class="btns">
+                <button class="update">Update</button>
+                <button class="delete">Delete</button>
+            </div>
+
+        </div>
+    `;
+
+    products.appendChild(card);
+
+    popup.style.display = "none";
+});
+
+products.addEventListener("click", (e)=>{
+
+    const card = e.target.closest(".card");
+
+    if(e.target.classList.contains("delete")){
+        card.remove();
+    }
+
+    if(e.target.classList.contains("update")){
+
+        editCard = card;
+
+        titleInput.value =
+        card.querySelector("h2").textContent;
+
+        descInput.value =
+        card.querySelector(".desc").textContent;
+
+        priceInput.value =
+        card.querySelector(".price")
+        .textContent.replace("₹","");
+
+        imageInput.value =
+        card.querySelector("img").src;
+
+        submitBtn.textContent = "Update";
+
+        popup.style.display = "flex";
+    }
 });
